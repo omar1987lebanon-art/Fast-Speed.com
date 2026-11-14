@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#071b36">
+  <meta name="description" content="FAST SPEED — حلول إنترنت واتصال سريع ومستقر.">
+  <title>FAST SPEED | إنترنت بسرعة تثق بها</title>
+  <style>
+    :root{--navy:#071b36;--blue:#087cf0;--cyan:#21d4fd;--ink:#10233e;--muted:#60718a;--light:#f3f8ff;--white:#fff}
+    *{box-sizing:border-box} html{scroll-behavior:smooth} body{margin:0;font-family:Tahoma,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.7}
+    a{text-decoration:none;color:inherit}.container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:rgba(7,27,54,.96);backdrop-filter:blur(12px);color:white;border-bottom:1px solid #ffffff20}
+    nav{min-height:76px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:11px;font-weight:900;font-size:1.35rem;letter-spacing:1px}
+    .brand-mark{width:39px;height:39px;border-radius:12px;background:linear-gradient(135deg,var(--cyan),var(--blue));display:grid;place-items:center;font-size:1.2rem}
+    .brand span:last-child{color:var(--cyan)} .links{display:flex;gap:25px;color:#e5efff;font-size:.94rem}.links a:hover{color:var(--cyan)}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:12px 22px;border-radius:12px;font-weight:800;background:linear-gradient(110deg,var(--blue),#12b8e9);color:white;box-shadow:0 10px 25px #087cf044;transition:.2s}
+    .btn:hover{transform:translateY(-2px);filter:brightness(1.08)}.btn-outline{background:transparent;border:1px solid #ffffff70;box-shadow:none}
+    .hero{background:radial-gradient(circle at 15% 20%,#0d6fc455,transparent 32%),linear-gradient(125deg,#06152b,#0a2d55 65%,#064b80);color:white;overflow:hidden;position:relative}
+    .hero-grid{min-height:610px;display:grid;grid-template-columns:1.1fr .9fr;align-items:center;gap:35px;padding-top:65px;padding-bottom:75px}
+    .eyebrow{display:inline-flex;align-items:center;gap:8px;color:#8deaff;background:#ffffff12;border:1px solid #ffffff26;padding:7px 13px;border-radius:30px;font-size:.88rem}
+    h1{font-size:clamp(2.5rem,5vw,4.7rem);line-height:1.18;margin:22px 0 18px;letter-spacing:-1.5px}
+    h1 em{font-style:normal;color:var(--cyan)}.hero p{font-size:1.12rem;color:#d5e5f8;max-width:590px;margin:0 0 30px}.actions{display:flex;gap:12px;flex-wrap:wrap}
+    .visual{min-height:360px;display:grid;place-items:center;position:relative}
+    .orbit{width:min(390px,82vw);aspect-ratio:1;border:1px solid #52c9ff55;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 80px #0c9eff22,inset 0 0 70px #0c9eff15;position:relative}
+    .orbit:before,.orbit:after{content:"";position:absolute;border:1px solid #52c9ff35;border-radius:50%;inset:12%}
+    .orbit:after{inset:25%}.signal{width:48%;aspect-ratio:1;border-radius:32%;transform:rotate(45deg);background:linear-gradient(135deg,#20d9ff,#087cf0 70%);display:grid;place-items:center;box-shadow:0 0 65px #13bfff88}
+    .signal span{transform:rotate(-45deg);font-size:5rem;color:white}.speed-tag{position:absolute;bottom:8%;left:2%;background:#ffffff12;border:1px solid #ffffff35;border-radius:16px;padding:12px 18px;color:#dff8ff;backdrop-filter:blur(8px)}
+    section{padding:82px 0}.section-head{text-align:center;max-width:680px;margin:0 auto 42px}.section-head h2{font-size:2.2rem;margin:0 0 10px;color:var(--navy)}.section-head p{color:var(--muted);margin:0}
+    .features{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.feature,.plan,.contact-card{border:1px solid #e4edf8;border-radius:20px;padding:25px;background:white;box-shadow:0 12px 35px #183c6810}
+    .feature-icon{width:50px;height:50px;border-radius:15px;display:grid;place-items:center;background:#e8f5ff;color:var(--blue);font-size:1.5rem}
+    .feature h3{margin:15px 0 5px}.feature p{margin:0;color:var(--muted);font-size:.95rem}
+    .plans{background:var(--light)}.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.plan{position:relative}.plan h3{margin:0;font-size:1.3rem}.plan .speed{font-size:2rem;font-weight:900;color:var(--blue);margin:12px 0 2px}.plan small{color:var(--muted)}.plan ul{padding:0 20px 0 0;color:var(--muted);min-height:105px}.plan .btn{width:100%}.note{text-align:center;color:var(--muted);font-size:.85rem;margin-top:18px}
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:stretch}.contact-card h3{margin-top:0}.contact-card p{color:var(--muted)}.contact-list{display:grid;gap:12px;margin-top:20px}.contact-item{display:flex;gap:12px;align-items:center}.contact-item b{color:var(--blue)}
+    form{display:grid;gap:13px}input,textarea{width:100%;padding:14px 15px;border:1px solid #dce7f4;border-radius:12px;font:inherit;background:#fbfdff}input:focus,textarea:focus{outline:2px solid #91d5ff;border-color:var(--blue)}textarea{min-height:115px;resize:vertical}
+    footer{background:#06152b;color:#b8c9df;padding:25px 0}.footer-row{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}.footer-row strong{color:white}
+    @media(max-width:800px){.links{display:none}.hero-grid{grid-template-columns:1fr;text-align:center;min-height:auto;padding:75px 0 50px}.hero p{margin-inline:auto}.actions{justify-content:center}.visual{min-height:300px}.features,.plan-grid{grid-template-columns:1fr}.contact-grid{grid-template-columns:1fr}section{padding:62px 0}}
+  </style>
+</head>
+<body>
+<header><div class="container"><nav>
+  <a class="brand" href="#home"><span class="brand-mark">ϟ</span><span>FAST <span>SPEED</span></span></a>
+  <div class="links"><a href="#home">الرئيسية</a><a href="#about">من نحن</a><a href="#services">مميزاتنا</a><a href="#plans">الباقات</a><a href="#contact">اتصل بنا</a></div>
+  <a class="btn" href="#contact">اشترك الآن</a>
+</nav></div></header>
+<main>
+  <section class="hero" id="home"><div class="container hero-grid">
+    <div>
+      <span class="eyebrow">● اتصال أسرع، تجربة أفضل</span>
+      <h1>عالمك أسرع مع<br><em>FAST SPEED</em></h1>
+      <p>نقرّبك من كل ما تحب عبر حلول إنترنت مصممة لتمنحك اتصالاً مستقراً وتجربة سلسة للعمل والدراسة والترفيه.</p>
+      <div class="actions"><a class="btn" href="#plans">اكتشف الباقات</a><a class="btn btn-outline" href="#contact">تواصل معنا</a></div>
+    </div>
+    <div class="visual"><div class="orbit"><div class="signal"><span>ϟ</span></div><div class="speed-tag">FAST SPEED<br><strong>اتصال يواكبك</strong></div></div></div>
+  </div></section>
+  <section id="about"><div class="container"><div class="section-head"><h2>من نحن</h2><p>FAST SPEED — شركة توزيع إنترنت تهدف إلى توفير اتصال موثوق وخدمة قريبة من احتياجات العملاء.</p></div>
+    <div class="features">
+      <article class="feature"><div class="feature-icon">⚡</div><h3>سرعة تواكبك</h3><p>حلول اتصال تساعدك على إنجاز أعمالك والاستمتاع بمحتواك بسهولة.</p></article>
+      <article class="feature"><div class="feature-icon">◉</div><h3>اهتمام بالعميل</h3><p>نحرص على الاستماع إلى احتياجاتك ومساعدتك في اختيار الخدمة المناسبة.</p></article>
+      <article class="feature"><div class="feature-icon">⌁</div><h3>اتصال مستقر</h3><p>نسعى إلى تقديم تجربة إنترنت مستقرة تناسب الاستخدام اليومي.</p></article>
+    </div>
+  </div></section>
+  <section class="plans" id="services"><div class="container"><div class="section-head"><h2>لماذا FAST SPEED؟</h2><p>لأن الاتصال الجيد يجب أن يكون بسيطاً وواضحاً ويمكن الاعتماد عليه.</p></div>
+    <div class="features">
+      <article class="feature"><div class="feature-icon">⌂</div><h3>للمنازل</h3><p>تصفح ومشاهدة ودراسة لجميع أفراد العائلة.</p></article>
+      <article class="feature"><div class="feature-icon">▣</div><h3>للأعمال</h3><p>ابقَ متصلاً بعملائك وفريقك وأنجز مهامك اليومية.</p></article>
+      <article class="feature"><div class="feature-icon">♫</div><h3>للترفيه</h3><p>استمتع بالألعاب والفيديو والمحتوى الذي تحبه.</p></article>
+    </div>
+  </div></section>
+  <section id="plans"><div class="container"><div class="section-head"><h2>باقات الإنترنت</h2><p>اختر الباقة المناسبة لك من عروض FAST SPEED الشهرية.</p></div>
+    <div class="plan-grid">
+      <article class="plan"><h3>باقة 4 ميغا</h3><div class="speed">$25<small style="font-size:.9rem"> / شهرياً</small></div><small>حجم البيانات: 300 جيغا</small><ul><li>سرعة إنترنت 4 ميغا</li><li>اشتراك شهري</li><li>للاستفسار والاشتراك تواصل معنا</li></ul><a class="btn" href="https://wa.me/96176598963?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%A8%D8%A7%D9%82%D8%A9%204%20%D9%85%D9%8A%D8%BA%D8%A7" target="_blank" rel="noopener">اشترك عبر واتساب</a></article>
+      <article class="plan"><h3>باقة 6 ميغا</h3><div class="speed">$30<small style="font-size:.9rem"> / شهرياً</small></div><small>حجم البيانات: 400 جيغا</small><ul><li>سرعة إنترنت 6 ميغا</li><li>اشتراك شهري</li><li>للاستفسار والاشتراك تواصل معنا</li></ul><a class="btn" href="https://wa.me/96176598963?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%A8%D8%A7%D9%82%D8%A9%206%20%D9%85%D9%8A%D8%BA%D8%A7" target="_blank" rel="noopener">اشترك عبر واتساب</a></article>
+      <article class="plan"><h3>باقة 8 ميغا</h3><div class="speed">$35<small style="font-size:.9rem"> / شهرياً</small></div><small>حجم البيانات: 500 جيغا</small><ul><li>سرعة إنترنت 8 ميغا</li><li>اشتراك شهري</li><li>للاستفسار والاشتراك تواصل معنا</li></ul><a class="btn" href="https://wa.me/96176598963?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%A8%D8%A7%D9%82%D8%A9%208%20%D9%85%D9%8A%D8%BA%D8%A7" target="_blank" rel="noopener">اشترك عبر واتساب</a></article>
+      <article class="plan"><h3>باقة 10 ميغا</h3><div class="speed">$40<small style="font-size:.9rem"> / شهرياً</small></div><small>حجم البيانات: 600 جيغا</small><ul><li>سرعة إنترنت 10 ميغا</li><li>اشتراك شهري</li><li>للاستفسار والاشتراك تواصل معنا</li></ul><a class="btn" href="https://wa.me/96176598963?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%A8%D8%A7%D9%82%D8%A9%2010%20%D9%85%D9%8A%D8%BA%D8%A7" target="_blank" rel="noopener">اشترك عبر واتساب</a></article>
+      <article class="plan"><h3>باقة 12 ميغا</h3><div class="speed">$45<small style="font-size:.9rem"> / شهرياً</small></div><small>حجم البيانات: 700 جيغا</small><ul><li>سرعة إنترنت 12 ميغا</li><li>اشتراك شهري</li><li>للاستفسار والاشتراك تواصل معنا</li></ul><a class="btn" href="https://wa.me/96176598963?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%A8%D8%A7%D9%82%D8%A9%2012%20%D9%85%D9%8A%D8%BA%D8%A7" target="_blank" rel="noopener">اشترك عبر واتساب</a></article>
+      <article class="plan"><h3>باقة 20 ميغا</h3><div class="speed">$135<small style="font-size:.9rem"> / شهرياً</small></div><small>حجم البيانات: غير محدود</small><ul><li>سرعة إنترنت 20 ميغا</li><li>اشتراك شهري</li><li>للاستفسار والاشتراك تواصل معنا</li></ul><a class="btn" href="https://wa.me/96176598963?text=%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%A7%D9%84%D8%A7%D8%B4%D8%AA%D8%B1%D8%A7%D9%83%20%D8%A8%D8%A8%D8%A7%D9%82%D8%A9%2020%20%D9%85%D9%8A%D8%BA%D8%A7" target="_blank" rel="noopener">اشترك عبر واتساب</a></article>
+    </div><p class="note">الأسعار بالدولار الأمريكي شهرياً. جميع الباقات بحسب سعة البيانات الموضحة، وباقة 20 ميغا غير محدودة.</p>
+  </div></section>
+  <section id="contact"><div class="container"><div class="section-head"><h2>تواصل معنا</h2><p>هل تريد الاشتراك أو الاستفسار؟ يسعدنا تواصلك معنا.</p></div>
+    <div class="contact-grid">
+      <div class="contact-card"><h3>FAST SPEED</h3><p>نحن هنا لمساعدتك في اختيار خدمة الإنترنت المناسبة.</p>
+        <div class="contact-list"><div class="contact-item"><span>👤</span><span>المالك: <b>Omar Al-Zarzouri</b></span></div><div class="contact-item"><span>☎</span><span>الهاتف: <b><a href="tel:+96176598963">76 598 963</a> — <a href="tel:+96170369421">70 369 421</a></b></span></div><div class="contact-item"><span>⌖</span><span>منطقة التغطية: <b>لبنان — عكار — وادي خالد</b></span></div><div class="contact-item"><span>✉</span><span>واتساب: <b><a href="https://wa.me/96176598963" target="_blank" rel="noopener">راسلنا عبر واتساب</a></b></span></div></div>
+      </div>
+      <div class="contact-card"><h3>أرسل استفسارك</h3><form id="contactForm"><input required placeholder="الاسم الكامل"><input required type="tel" placeholder="رقم الهاتف"><textarea required placeholder="كيف يمكننا مساعدتك؟"></textarea><button class="btn" type="submit">إرسال عبر البريد</button><small id="formMsg" style="color:#60718a">هذا النموذج يفتح تطبيق البريد لديك بعد إضافة بريد الشركة في الكود.</small></form></div>
+    </div>
+  </div></section>
+</main>
+<footer><div class="container footer-row"><span>© <span id="year"></span> <strong>FAST SPEED</strong> — جميع الحقوق محفوظة</span><span>بإدارة Omar Al-Zarzouri</span></div></footer>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  document.getElementById('contactForm').addEventListener('submit', function(e){
+    e.preventDefault();
+    const fields = this.querySelectorAll('input,textarea');
+    const subject = encodeURIComponent('استفسار من موقع FAST SPEED');
+    const body = encodeURIComponent('الاسم: '+fields[0].value+'\nالهاتف: '+fields[1].value+'\nالرسالة: '+fields[2].value);
+    const email = 'ADD_COMPANY_EMAIL_HERE';
+    if(email === 'ADD_COMPANY_EMAIL_HERE'){
+      document.getElementById('formMsg').textContent = 'للتواصل المباشر، استخدم أرقام الهاتف أو رابط واتساب أعلاه.';
+      return;
+    }
+    location.href = 'mailto:'+email+'?subject='+subject+'&body='+body;
+  });
+</script>
+</body></html>
